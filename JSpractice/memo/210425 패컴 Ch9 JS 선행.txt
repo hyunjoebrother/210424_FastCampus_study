@@ -1,0 +1,31 @@
+210425 패스트 캠퍼스 - Ch 9. JS 선행
+
+01. 개요
+
+먼저 브라우저에 동작하기 위해 index.html 생성
+head 태그 안에 코드 작성해서 js랑 연결
+<script src = "./main.js"></script>
+그리고 console.log('lol'); 
+html - F12 - console에서 확인 가능!
+
+* 표기법 - 여러 단어를 하나로 인식시킬 때
+
+HTML, CSS
+: 'dash-case' 표기법, 'snake_case' 표기법
+(ex. the_cute_cat)
+
+JS
+: 'camelCase' 표기법, 'PascalCase' 표기법
+(ex. theCuteCat)
+
+
+
+
+
+
+
+
+
+
+
+
