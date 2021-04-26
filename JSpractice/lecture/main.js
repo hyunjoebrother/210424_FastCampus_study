@@ -37,3 +37,20 @@ let isShow = false;
 
 console.log(checked);
 console.log(isShow);
+
+
+// 자료형 4. Undefined -> 값이 할당되지 않은 상태를 나타냄
+let undef; // 값이 없음
+let obj = {abc : 123}; // abc라는 속성에 숫자 값 넣어주는 객체 {}
+
+console.log(undef); // undefined
+console.log(obj.abc); // abc라는 속성의 값은 무엇인가 123
+console.log(obj.xyz); // undefined
+
+
+// 자료형 5. Null -> 어떤 값이 의도적으로 비어있음을 의미
+let empty = null;
+console.log(empty);
+
+
+// 자료형 6. Object : 객체 data
