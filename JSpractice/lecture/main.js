@@ -53,4 +53,22 @@ let empty = null;
 console.log(empty);
 
 
-// 자료형 6. Object : 객체 data
+// 자료형 6. Object : 객체 data -> 여러 data를 { : } 형태로 저장
+let user = {
+    name : 'Mei', // 문자 data
+    age : 17, // 숫자 data
+    inValid : true // bool data
+};
+
+console.log(user.name);
+console.log(user.age);
+console.log(user.inValid);
+console.log(user);
+
+
+// 자료형 7. Array : 배열 data -> 여러 data를 순차적으로 저장
+let fruits = ['Apple', 'Banana', 'Cherry'];
+
+console.log(fruits[0]);
+console.log(fruits[1]);
+console.log(fruits[2]);
