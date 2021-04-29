@@ -64,9 +64,17 @@ Undefined는 의도적으로 값을 넣지 않았다고 '명시'
 
 03. 변수, 예약어
 
-* 변수 : data를 저장하고 참조(사용)하는 data의 이름
-var은 권장 X -> let, const 쓰자
-재사용 가능
+* 변수
+ : data를 저장하고 참조(사용)하는 data의 이름, 재사용 가능
+var은 권장 X
+let : 값(data) 재할당 가능 -> const 쓰다가 고칠 거 같으면 let
+const : 값 재할당 ㅂㄱㄴ -> 우선 권장 ㅇㅇ
+
+* 예약어 (Reserved Word)
+: 특별한 의미를 가지고 있어서 변수나 함수 이름 사용 불가한 단어
+-> SyntaxError 남
+this, if, break ...
+
 
 
 

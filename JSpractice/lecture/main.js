@@ -73,9 +73,30 @@
 // console.log(fruits[1]);
 // console.log(fruits[2]);
 
-// 변수, 예약어
+// // 변수, 예약어
 
-let a = 2;
-let b = 5;
+// let a = 2; // 변수 선언
+// let b = 5;
 
-console.log(a+b);
+// console.log(a+b);
+
+// let a = 12; 
+// console.log(a); // 12
+
+// a = 999; // let으로 변수 선언 -> 값의 재할당 가능
+// console.log(a);
+
+// const a = 12;
+// console.log(a); // 12
+
+// b = 999;
+// console.log(b); // Error -> 값의 재할당 불가능!
+
+
+// // 예약어 - 이미 이름, 특별한 의미 있어서 사용 불가
+// let this = 'Hi';
+// let 1f = 123;
+// let break = true;
+
+// 함수
+
