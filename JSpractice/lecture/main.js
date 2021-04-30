@@ -139,22 +139,42 @@
 // hello();
 // world();
 
-// 객체 data 
-const mei = {
-    // 속성
-    name : 'MEI',
-    age : 17,
-    // 메소드 Method (속성 아님/ 속성 부분에 함수라는 data)
-    getName: function () {
-        return this.name;
-        // this : 소속되어있는 객체 data를 의미
-    }
-};
+// // 객체 data 
+// const mei = {
+//     // 속성
+//     name : 'MEI',
+//     age : 17,
+//     // 메소드 Method (속성 아님/ 속성 부분에 함수라는 data)
+//     getName: function () {
+//         return this.name;
+//         // this : 소속되어있는 객체 data를 의미
+//     }
+// };
 
-const hisName = mei.getName();
-console.log(hisName); // MEI
-console.log(mei.getName()); // MEI
-
-
+// const hisName = mei.getName();
+// console.log(hisName); // MEI
+// console.log(mei.getName()); // MEI
 
 
+// // 조건문
+// let isShow = true; // bool data
+// let checked = false;
+
+// if (isShow) {
+//     console.log('Show!'); // Show!
+// }
+
+// if (checked) {
+//     console.log('Checked!');
+// }
+
+// let isShow = true; // 만약 false -> Hide 출력
+
+// if (isShow) {
+//     console.log('Show!!!!'); // 출력
+// } else {
+//     console.log('Hide?');
+// }
+
+
+// DOM API

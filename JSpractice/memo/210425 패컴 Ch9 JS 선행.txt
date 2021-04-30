@@ -93,7 +93,14 @@ return this.name;
 -> this : 소속되어있는 객체 data를 의미
 
 
+05. 조건문
+: 조건의 결과 truthy, falsy에 따라 다른 코드를 실행하는 구문
 
+if 구문 : 조건 check -> true면 { } 실행!
+else 구문 : 조건이 아닐 때 실행!
+
+
+06. DOM API
 
 
 
