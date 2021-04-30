@@ -98,5 +98,63 @@
 // let 1f = 123;
 // let break = true;
 
-// 함수
-ddd
+// // 함수
+
+// // 함수 선언
+// function helloFunc() { 
+//     // 명령
+//     console.log(1234);
+// }
+// // 함수 호출
+// helloFunc(); // 1234
+
+// function returnFunc()
+// {
+//     return 123; // 특정 값 반환
+//     // return : 함수 밖으로 내보냄
+// }
+
+// let a = returnFunc();
+// console.log(a); // 123
+
+// function sum(a,b) { // a와 b는 매개변수 Parameters
+//     return a+b;
+// }
+// // 재사용
+// let a = sum(1,2); // 1과 2는 인수 Arguments
+// let b = sum(7,12);
+// let c = sum(2,4);
+
+// console.log(a,b,c); // 3, 19, 6
+
+// // 기명 (이름이 있는) 함수
+// function hello() {
+//     console.log('Hello~');
+// }
+// // 익명 (이름이 없는) 함수
+// 함수 선언 x 함수 표현!
+// let world = function () {
+//     console.log('Word~');
+// }
+// hello();
+// world();
+
+// 객체 data 
+const mei = {
+    // 속성
+    name : 'MEI',
+    age : 17,
+    // 메소드 Method (속성 아님/ 속성 부분에 함수라는 data)
+    getName: function () {
+        return this.name;
+        // this : 소속되어있는 객체 data를 의미
+    }
+};
+
+const hisName = mei.getName();
+console.log(hisName); // MEI
+console.log(mei.getName()); // MEI
+
+
+
+

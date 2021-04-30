@@ -76,9 +76,21 @@ const : 값 재할당 ㅂㄱㄴ -> 우선 권장 ㅇㅇ
 this, if, break ...
 
 
-04. 함수
+04. 함수 function
+: 특정 동작(기능)을 수행하는 일부 코드의 집합(부분)
+함수 선언 -> 호출 가능
+함수 특정 값 반환 -> 호출 가능
+sum(a, b) -> a와 b는 매개변수 Parameters
+let a = sum(1, 2) -> 1과 2는 인수 Arguments
 
+* 익명 (이름이 없는) 함수
+let world = function () { console.log(); }
+-> 함수 호출을 위해 변수에 할당 -> world();
+: 함수 선언 x 함수 표현!
 
+* 객체 data
+return this.name; 
+-> this : 소속되어있는 객체 data를 의미
 
 
 
