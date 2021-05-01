@@ -178,24 +178,98 @@
 
 
 // DOM API
+
+// // HTML 요소 Element 1개 검색/찾기
+// const boxEl = document.querySelector('.box');
+
+// // HTML 요소에 적용할 수 있는 메소드
+// boxEl.addEventListener();
+
+// // 인수 Argument를 추가 가능
+// boxEl.addEventListener(1,2);
+
+// // addEventListener(Event, Handler)
+
+// // 인수 1 - 이벤트 Event - 상황
+// boxEl.addEventListener('click', 2);
+
+// // 인수 2 - 핸들러 Handler - 실행할 함수
+// boxEl.addEventListener('click', function() 
+// {
+//     console.log('Click~!');
+// } );
+
+
+// // 요소의 클래스 정보 객체 활용
+// boxEl.classList.add('active');
+// // .contains : 해당 요소 class 유무 check
+// let isContains = boxEl.classList.contains('active'); 
+// console.log(isContains); // true
+
+// boxEl.classList.remove('active');
+// isContains = boxEl.classList.contains('active');
+// console.log(isContains); // false
+
+
+// // HTML 요소 Element 모두 검색/찾기
+// const boxEls = document.querySelectorAll('.box');
+// console.log(boxEls);
+
+// // 찾은 요소들 반복해서 함수 실행
+// // 익명 함수를 인수로 추가
+// boxEls.forEach(function() {} );
+
+// // 첫 번째 매개변수 boxEl : 반복 중인 요소
+// // 두 번째 매개변수 index : 반복 중인 번호
+// boxEls.forEach(function (boxEl, index) {} );
+
+// // 출력
+// boxEls.forEach(function (boxEl, index) {
+//     boxEl.classList.add(`order-${index + 1}`);
+//     console.log(index, boxEl);
+// } );
+
+// const boxEl = document.querySelector('.box');
+
+// // Getter : 값을 얻는 용도
+// console.log(boxEl.textContent) // Box!! - text로 지정된 내용만!
+
+// // Setter : 값을 지정하는 용도
+// boxEl.textContent = 'Mei?!'; // text 넣겠다고 선언
+// console.log(boxEl.textContent); // Mei?! - 지정된 text 출력
+
+
+//// 실습 ////
+
 // let boxEl = document.querySelector('.box'); // .box : css 클래스 선택자
+
 // console.log(boxEl);
 
-// HTML 요소 Element 1개 검색/찾기
+// boxEl.addEventListener('click', function() {
+//     console.log('Click~!');
+
+//     boxEl.classList.add('active'); // 클릭 후 active라는 class가 생김
+//     console.log(
+//         boxEl.classList.contains('active') // 확인용 -> true 생성됨
+//     );
+
+//     boxEl.classList.remove('active');
+//     console.log(
+//         boxEl.classList.contains('active') // 확인용 -> false 제거됨
+//     );
+// });
+
+// const boxEls = document.querySelectorAll('.box');
+
+// // 매개변수 boxEl : 각각의 개별적인 box 요소들을 사용하겠다
+// boxEls.forEach(function(boxEl, index) {
+//     boxEl.classList.add(`order-${index+1}`); // 0-based numbering
+//     console.log(index, boxEl);
+// });
+
 const boxEl = document.querySelector('.box');
 
-// HTML 요소에 적용할 수 있는 메소드
-boxEl.addEventListener();
+console.log(boxEl.textContent); // 내용 숫자 1 (가장 먼저 찾아진 text)
 
-// 인수 Argument를 추가 가능
-boxEl.addEventListener(1,2);
-
-// 1 - 이벤트 Event - 상황
-boxEl.addEventListener('click', 2);
-
-// 2 - 핸들러 Handler - 실행할 함수
-boxEl.addEventListener('click', function() 
-{
-    console.log('Click~!');
-} );
-
+boxEl.textContent = 'Mei?!';
+console.log(boxEl.textContent); // 지정된 값 출력 
