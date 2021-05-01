@@ -267,9 +267,20 @@
 //     console.log(index, boxEl);
 // });
 
-const boxEl = document.querySelector('.box');
+// const boxEl = document.querySelector('.box');
 
-console.log(boxEl.textContent); // 내용 숫자 1 (가장 먼저 찾아진 text)
+// console.log(boxEl.textContent); // 내용 숫자 1 (가장 먼저 찾아진 text)
 
-boxEl.textContent = 'Mei?!';
-console.log(boxEl.textContent); // 지정된 값 출력 
+// boxEl.textContent = 'Mei?!';
+// console.log(boxEl.textContent); // 지정된 값 출력 
+
+
+// 메소드 체이닝
+const a = 'Hello~';
+// split : 문자를 인수 기준으로 쪼개서 배열로 반환
+// reverse : 배열 뒤집기
+// join : 배열을 인수 기준으로 문자로 병합해 반환
+const b = a.split('').reverse().join(''); // 메소드 체이닝
+
+console.log(a); // Hello~
+console.log(b); // ~olleH

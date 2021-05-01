@@ -137,9 +137,15 @@ Setter : 값을 지정하는 용도
 
 
 08. 메소드 체이닝 Method Chaining
+: js 메소드를 chain 처럼 연결
+
+const b = a.split('').reverse().join('');
+-> split - reverse - join 으로 Method Chaining
 
 
+09. 질의응답
 
+210502 새벽 1시에 끝!
 
 
 
