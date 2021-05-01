@@ -100,8 +100,19 @@ if 구문 : 조건 check -> true면 { } 실행!
 else 구문 : 조건이 아닐 때 실행!
 
 
-06. DOM API
+06. DOM API : HTML을 제어할 때 쓰는 명령
+: Document Object Model, Application Programming Interface
+DOM : HTML에 들어있는 여러 문서 구조 (div, span, input..)
+API : 웹사이트가 동작하기 위한 프로그래밍 명령 
 
+* script 태그는 body 태그 맨 밑에 넣기
+or <head> <script defer src = "./main.js"></script> </head>
+-> html 태그 다 읽고 다시 script 를 실행하겠다는 뜻
+
+>> browser은 코드를 위에서 아래로 코드를 읽는데
+script 태그가 head에 있어서 하단의 body 태그 내용을 모름
+-> 그래서 null 이라고 data 출력
+-> body 태그 맨 밑에 script 태그 넣거나, defer 속성 추가해서 head 태그 안에 넣기
 
 
 

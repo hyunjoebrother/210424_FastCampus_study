@@ -178,3 +178,5 @@
 
 
 // DOM API
+let boxEl = document.querySelector('.box'); // .box : css 클래스 선택자
+console.log(boxEl);
