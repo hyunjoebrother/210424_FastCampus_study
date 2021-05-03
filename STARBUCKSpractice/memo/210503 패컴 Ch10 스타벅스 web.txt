@@ -16,3 +16,68 @@ reset.min.css에서 html 코드를 head태그에 복붙
 
 
 02. 시작하기 - 오픈 그래프와 트위터 카드
+
+* 오픈 그래프 (Open Graph Protocol)
+: 웹페이지가 sns 공유될 때 우선적으로 활용되는 정보 지정
+링크 공유할 때 뜨는 카드 형식 페이지
+코드 복붙 <meta property = "og:type" content= "@@">
+기본 정보 명시하자 ㅇㅇ (선생님 깃헙에 코드 있음)
+페이지 설명은 간단하게 - 길면 스팸같음
+meta 태그로 meta 정도를 잘 써보자
+
+* SEO (Search Enginde Optimization)
+: 검색 엔진 최적화 -> 공유될 때 뜨는 정보(사진)
+
+* 트위터 카드 - 트위터에 공유될 때 ㅇㅇ
+<meta property = "twitter:card ~>
+
+** 코드를 어디에 쓸까?
+-> head태그에 title 밑에 쓰자
+
+
+03. 시작하기 - Google Fonts
+
+구글 폰트 검색 -> 나눔고딕 nanum gothic 선택
+-> 폰트가 앵간 용량 커서 적당히 최적화하게 쓰자
+-> select this style - use on the web - <link> 복붙
+-> html 파일에서 main.css 태그 위에 넣자
+
+그 밑에 css rules 복붙해서 폰트를 적용하자 
+-> main.css - body태그에 복붙
+-> 전부 자신 요소 하위 요소로 'css 상속'된다
+
+폰트는 저작권 주의하자! 구글은 대부분 무료무료
+
+
+04. 시작하기 - Google Material Icons
+
+구글 material.io 링크 ㄱㄱ
+get started - web - web getting started
+-> link 태그 하나짜리 CDN 코드 복붙
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+-> main.css 태그 위에 넣자
+
+아이콘 검색 - span태그 코드 복붙
+(span 태그 아니여도 ㄱㅊ 로고 이름은 같아야 한다)
+
+아이콘은 글씨 취급이라 font-size로 크기 조절
+기본 크기 24px
+
+
+<<다른 메모장에 제목 달고 할까>>
+05. 헤더와 드롭타운 메뉴 - 로고
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
