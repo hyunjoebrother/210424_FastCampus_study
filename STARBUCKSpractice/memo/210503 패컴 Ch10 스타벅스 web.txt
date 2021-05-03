@@ -4,3 +4,15 @@
 
 먼저 Github에서 images폴더, favicon.ico, png 파일 다운
 그 후에 index.html 생성
+Live Server에 스벅 아이콘이 뜸 > favicon.ico 파일 때문
+link태그로 직접 png 파일을 link 태그로 넣자
+파비콘 : favorite icon
+
+브라우저의 기본적인 style 초기화하자
+reset.css cdn 검색 -> JSDELIVR 사이트 ㄱㄱ
+reset.min.css에서 html 코드를 head태그에 복붙
+
+초기화 후 css 폴더 만들고 main.css 파일 연결
+
+
+02. 시작하기 - 오픈 그래프와 트위터 카드
