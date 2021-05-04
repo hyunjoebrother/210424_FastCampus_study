@@ -1,0 +1,40 @@
+210504 패스트 캠퍼스 - Ch 10. 스타벅스 web 
+
+
+05. 헤더와 드롭타운 메뉴 - 로고
+
+헤더 = 로고+ 메인 메뉴 + 서브 메뉴 + @
+
+body태그에 header 태그 만들기 (div 태그는 기능을 모름)
+-> 내부에 div 태그로 class = inner 지정
+-> a태그 - img 태그로 이미지 넣자
+<a href = "/"> : / 는 절대경로 (메인 페이지로 이동하겠다)
+-> css 작업하자
+<< body태그로 기본 css 세팅 check >>
+
+그리고 header을 선택자로 .inner, .logo 클래스 세팅
+header .inner -> margin(외부여백) 으로 중앙정렬 check
+
+로고는 기본적으로 75px -> height 조작
+img 태그 : inline요소 - 가로세로값 x 글자를 다루는 용도
+-> 그래서 로고 밑에 살짝 여백이 남음
+-> css에서 display : block으로 지정 -> 글자 취급이 아닌 레이아웃으로!
+
+이제 logo를 header 내에서 가운데 정렬하자
+-> position : absolute -> 부모 요소 기준으로 배치하자
+-> 부모 요소인 inner의 position : relative지정해야함
+-> 가운데 배치하고 싶으면 height/width 값 명시해야함!
+
+
+06. 헤더와 드롭타운 메뉴 - 서브 메뉴
+
+
+
+
+
+
+
+
+
+
+

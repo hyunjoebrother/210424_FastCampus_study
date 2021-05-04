@@ -64,15 +64,6 @@ get started - web - web getting started
 기본 크기 24px
 
 
-<<다른 메모장에 제목 달고 할까>>
-05. 헤더와 드롭타운 메뉴 - 로고
-
-
-
-
-
-
-
 
 
 

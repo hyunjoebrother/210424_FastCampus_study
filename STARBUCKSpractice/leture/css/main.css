@@ -1,5 +1,40 @@
+/* COMMON */
 body {
-    color: red;
-    font-size: 100px;
+    /* 기본 setting */
+    color : #333333; /* #333 로도 써도 ㄱㅊ */
+    font-size: 16px;
+    font-weight: 400; /* 두께 100~900 중 일반적 */
+    line-height: 1.4;
     font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* logo 밑 여백 없애자 */
+img {
+    display : block; /* img는 원래 inline -> block 취급하자 */
+}
+
+
+
+/* HEADER */
+header {
+    background-color: royalblue;
+}
+
+header .inner {
+    /* 가운데 정렬 */
+    width: 1100px;
+    height: 120px;
+    margin: 0 auto; /* 외부여백 위아래는 0 좌우는 auto */
+    background-color: orange;
+    position: relative;
+}
+
+header .logo {
+    height: 75px;
+    /* 가운데 정렬 - 위아래 0으로 찍고 margin 처리 */
+    position: absolute; /* 부모 요소(inner) 기준으로 배치*/
+    top : 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
 }
