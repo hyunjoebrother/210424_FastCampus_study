@@ -28,8 +28,25 @@ img 태그 : inline요소 - 가로세로값 x 글자를 다루는 용도
 
 06. 헤더와 드롭타운 메뉴 - 서브 메뉴
 
+오른쪽 상단 Sign in, 통합검색 등등 만들어보자
+
+header 태그에서 div태그에서 sub-menu 클래스 만들자
+ul태그에 menu요소로 클래스 지정 (ul.menu로 타이핑)
+그리고 li 태그 만들자 (ul-li는 세트
+
+각 메뉴마다 a 태그로 링크를 걸자 
+아직 링크 안 만들어서 a태그 내부에 아무것도 안 쓰기 애매하면
+(임시적으로 나타내는 역할)
+
+tip1) # (URL Hash) <a href="#"></a>
+: CSS id 선택자를 이용해 페이지 내 특정 위치로 이동
+
+tip2) <a href="javascript:void(0)"></a>
+: js를 통해서 어떤 기능을 동작할건데 그 동작이 void
 
 
+다음 div.search 태그 만들자 -> input 태그
+그리고 그 안에 돋보기 아이콘 넣도록 .material-icons 클래스 지정
 
 
 
