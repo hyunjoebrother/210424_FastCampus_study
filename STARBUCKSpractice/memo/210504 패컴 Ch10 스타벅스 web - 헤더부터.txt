@@ -48,6 +48,32 @@ tip2) <a href="javascript:void(0)"></a>
 다음 div.search 태그 만들자 -> input 태그
 그리고 그 안에 돋보기 아이콘 넣도록 .material-icons 클래스 지정
 
+* 작업 시 로고가 거슬리면 css에서 .logo -> display : none 설정
+
+css 파일에서 html 선택자로 명시해주자
+
+header .sub-menu ul.menu
+: header안에 있는 sub-menu 안에 들어있는 
+ul태그면서 menu라는 클래스를 가지는 요소가 있다!
+상위 요소들을 하나씩 명시해줘야지 style 중복 줄여준다
+-> 띄어쓰기로 후선 선택!
+(특히 자주 사용하는 요소 ul 등등 check)
+
+공부하면서 하나하나 HTML 구조들 다 만들어두자!
+header .sub-menu .search { }
+header .sub-menu .search input { }
+header .sub-menu .search .material-icons { }
+
+a 태그는 사용자가 클릭하는 영역
+-> 링크 걸려있어서 밑줄 불편 -> 없애줌
+-> 대신 :hover 효과로 마우스 올리면 링크인지 알도록
+
+
+
+
+
+
+
 
 
 
