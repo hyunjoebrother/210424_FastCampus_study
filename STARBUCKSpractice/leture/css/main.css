@@ -46,7 +46,7 @@ header .logo {
 }
 
 header .sub-menu {
-
+    display: flex;
 }
 
 /* ul태그면서 menu라는 클래스를 가지는 요소가 있다! */
@@ -97,13 +97,35 @@ header .sub-menu ul.menu li a:hover { /* : (가상 클래스 선택자 - 마우�
 
 
 header .sub-menu .search {
+    height: 34px;
 
+    position: relative;
 }
 
 header .sub-menu .search input {
+    width: 36px;
+    height: 34px;
+    padding: 4px 10px; /* 내부영역 */
+    border: 1px solid #ccc; /* 테두리선 */
+    box-sizing: border-box; /* 지정한 요소 크기 유지하도록*/
+    border-radius: 5px;
+    outline: none; /* 창 누르면 입력 테두리 나오는 거 off */
+    background-color: #fff;
+    color: #777;
+    font-size: 12px;
+    transition: width .4s;
+}
 
+header .sub-menu .search input:focus { /* 크기 키워줌 */
+    width: 190px;
+    border-color: #669900;
 }
 
 header .sub-menu .search .material-icons {
-
+    height: 24px;
+    position: absolute; /* 부모요소search 기준 배치하겠다 -> position relative */
+    top : 0;
+    bottom: 0;
+    right: 5px;
+    margin: auto;
 }
