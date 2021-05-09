@@ -6,6 +6,8 @@ body {
     font-weight: 400; /* 두께 100~900 중 일반적 */
     line-height: 1.4;
     font-family: 'Nanum Gothic', sans-serif;
+
+    height: 3000px; /* 스크롤바 생김*/
 }
 
 /* logo 밑 여백 없애자 */
@@ -28,8 +30,12 @@ a {
 
 /* HEADER */
 header {
+    width: 100%;
+    /*position: relative;  밑에 배너 작업하면서 추가 */
     background-color: #f6f5f0;
     border-bottom: 1px solid #c8c8c8; /* 아래 테두리선 하나 */
+    position: fixed; /* 뷰 기준 배치, relative 대신 가능 */
+    top : 0;
 }
 
 /* header .inner {
@@ -239,4 +245,18 @@ header .main-menu .item .item__contents .contents__texture h4 {
 header .main-menu .item .item__contents .contents__texture p {
     color:#669900;
     margin: 4px 0 14px; /* 상중하 */
+}
+
+header .badges {
+    position: absolute; /* 부모요소 header 기준 배치 */
+    top: 132px;
+    right: 12px;
+}
+
+header .badges .badge {
+    border-radius: 10px;
+    overflow: hidden; /* 이미지 안 넘치도록 */
+    margin-bottom: 12px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,.15);
+    cursor: pointer;
 }

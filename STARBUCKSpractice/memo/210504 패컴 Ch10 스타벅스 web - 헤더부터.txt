@@ -117,6 +117,44 @@ header 마무리!
 
 10. 헤더와 드롭타운 메뉴 - BEM
 
+현재까지 헤더 클라스
+container > name/item > item__name/contents > contents__menu/texture
+
+<HTML class 속성의 작명법>
+BEM Block Element Modifier
+-> 중복 막기 위해 ㅇㅇ -> 정확하게 요소 지칭, 관리 편리
+
+case 1) 요소__일부분
+
+case 2) 요소--상태
+class = "btn btn--primary"
+class = "btn btn--success"
+class = "btn btn--error"
+
+
+
+11. 헤더와 드롭타운 메뉴 - 전역 배지(GASP) 
+
+: 옆에 배너 ㅇㅇ 스크롤하면 사라지는걸 해보자
+
+header 태그에서 inner태그 밑에 작성!
+스크롤 사라지는건 js 작업
+scroll할 때마다 console 출력하니 많은 함수가 실행됨을 알 수 있음
+-> lodash cdn라는 외부 JS 라이브러리로 작업하자
+-> cdn을 header에 복붙
+throttle이라는 메소드 내에 console.log());}, 300
+-> 300은 0.3초 -> 한번에 실행되는 함수가 많아서
+0.3초 단위로 부하를 줘서 여러개 실행 방지
+-> 일정 시간에 몇 개만 출력되도록 '제한'을 걸었다
+
+정리) _.throttle(함수, ms단위로 시간 추가)
+
+
+
+
+
+
+
 
 
 
