@@ -26,7 +26,7 @@ const badgeEl = document.querySelector('header .badges');
 window.addEventListener('scroll', _.throttle(function() {
     console.log('scroll!');
     if (window.scrollY) {
-            
+        
     }
 }, 300 ));// 0.3s마다 함수 다수 실행 부하 (실행 함수 제한 -> 숫자 천천히 출력) 
 
