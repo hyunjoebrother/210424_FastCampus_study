@@ -24,10 +24,25 @@ const badgeEl = document.querySelector('header .badges');
 //     console.log('scroll!'); // scroll할 때마다 출력
 // });    
 window.addEventListener('scroll', _.throttle(function() {
-    console.log('scroll!');
-    if (window.scrollY) {
-        
+    console.log(window.scrollY);
+    if (window.scrollY > 500) {
+        // 위치 기준으로 배지 숨기기
+        //badgeEl.style.display = 'none';
+        //gsap.to(요소, 지속시간s, 옵션);
+        gsap.to(badgeEl, .6, {
+            opacity : 0,
+            display : 'none' // 진짜 요소 제거됨
+        });
+    } else {
+        //badgeEl.style.display = 'block';
+        gsap.to(badgeEl, .6, {
+            opacity: 1,
+            displat : 'block'
+        });
     }
 }, 300 ));// 0.3s마다 함수 다수 실행 부하 (실행 함수 제한 -> 숫자 천천히 출력) 
 
 // _.throttle(함수, ms단위로 시간 추가)
+
+
+// 배너 없어지는 부자연스러워서 애니메이션 추가
