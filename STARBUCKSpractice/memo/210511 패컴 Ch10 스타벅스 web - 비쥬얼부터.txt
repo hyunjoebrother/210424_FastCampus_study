@@ -1,0 +1,23 @@
+210511 패스트 캠퍼스 - Ch 10. 스타벅스 web 
+
+
+13. 순차적 애니메이션 - 전역 버튼 스타일
+
+header section 밑 영역 'visual' section
+이미지가 하나씩 시간차 두고 나타나도록 해보자!!
+
+html에서 header 태그 밑에 section 태그 만들자
+inner태그로 화면에 보여줄 내용을 css로 가운데 정렬시키자
+img태그에 alt 속성에 이미지에 써있는 text에 써두자
+
+html에 요소 모두 추가하고 -> css 꾸미자
+
+
+
+
+
+
+
+
+
+
