@@ -276,7 +276,8 @@ header .badges .badge {
 }
 
 .visual .title {
-
+    position: absolute;
+    
 }
 
 .visual .title .btn {
