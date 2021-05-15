@@ -26,6 +26,65 @@ a {
     position: relative;
 }
 
+.btn {
+    width: 130px;
+    padding : 10px;
+    border : 2px solid #333;
+    border-radius: 4px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    transition: .4s;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn.btn--reverse {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn.btn--reverse:hover {
+    background-color: transparent; /* 투명 */
+    color: #333;
+}
+
+.btn.btn--brown {
+    background-color: #592b18;
+    color: #592b18;
+}
+
+.btn.btn--brown:hover {
+    background-color: #592b18;
+    color: #fff;
+}
+
+.btn.btn--gold {
+    background-color: #d9aa8a;
+    color: #d9aa8a;
+}
+
+.btn.btn--gold:hover {
+    background-color: #d9aa8a;
+    color: #fff;
+}
+
+.btn.btn--white {
+    background-color: #fff;
+    color: #fff;
+}
+
+.btn.btn--white:hover {
+    background-color: #fff;
+    color: #333;
+}
 
 
 /* HEADER */
@@ -36,6 +95,7 @@ header {
     border-bottom: 1px solid #c8c8c8; /* 아래 테두리선 하나 */
     position: fixed; /* 뷰 기준 배치, relative 대신 가능 */
     top : 0;
+    z-index: 9; /* 우리가 만들 다른 세션들보다 위에 있다 */
 }
 
 /* header .inner {
@@ -272,34 +332,46 @@ header .badges .badge {
 
 .visual .inner {
     height: 640px;
-    background-color: orange;
 }
 
 .visual .title {
-    position: absolute;
-    
+    position: absolute; /* 부모 요소 기준으로 배치하겠다 */
+    top : 88px;
+    left : -10px;
 }
 
 .visual .title .btn {
-
+    position: absolute;
+    top : 259px;
+    left : 173px;
 }
 
 .visual .cup1.image {
-
+    position: absolute;
+    bottom: 0;
+    right: -47px;
 }
 
 .visual .cup1.text {
-
+    position: absolute;
+    top: 38px;
+    right: 171px;
 }
 
 .visual .cup2.image {
-
+    position: absolute;
+    bottom: 0;
+    right: 162px;
 }
 
 .visual .cup2.text {
-
+    position: absolute;
+    top: 321px;
+    right: 416px;
 }
 
 .visual .spoon {
-
+    position: absolute;
+    bottom: 0;
+    left: 275px;
 }
