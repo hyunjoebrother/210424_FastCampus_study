@@ -46,3 +46,14 @@ window.addEventListener('scroll', _.throttle(function() {
 
 
 // 배너 없어지는 부자연스러워서 애니메이션 추가
+
+
+// 사진들이 시간차로 뜨도록 애니메이션 추가
+const fadeEls = document.querySelectorAll('.visual .fade-in');
+fadeEls.forEach(function (fadeEl, index) {
+    //gsap.to(요소, 지속시간s, 옵션);
+    gsap.to(fadeEl, 1, {
+        delay: (index+1) * .7, // 현재 fade-in 클래스 4개 -> 0.7, 1.4, 2.1, 2.8초 후 동작
+        opacity: 1
+    });
+});
