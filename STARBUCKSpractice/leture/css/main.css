@@ -419,9 +419,62 @@ header .badges .badge {
     width: 60%;
     height: 100%;
     background-color: #333;
+    display : flex;
+    /* 공지사항 수직정렬 */
+    align-items: center;
 }
+
+.notice .notice-line .inner__left h2 {
+    color : #fff;
+    font-size: 17px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.notice .notice-line .inner__left .swiper-container {
+    height: 62px;
+    background-color: orange;
+    flex-grow : 1; /* 높이값 별도로 없으면 최대한 늘려라 */
+}
+
+.notice .notice-line .inner__left .notice-line__more {
+    /* 아이콘 수평 정렬 */
+    width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notice .notice-line .inner__left .notice-line__more .material-icons {
+    color : #fff;
+    font-size: 30px;
+}
+
 
 .notice .notice-line .inner__right {
     width: 40%;
     height: 100%;
+    display: flex;
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    align-items: center;
+}
+
+.notice .notice-line .inner__right h2 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.notice .notice-line .inner__right .toggle-promotion {
+    /* 수직가운데 정렬 */
+    width: 62px;
+    height: 62px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notice .notice-line .inner__right .toggle-promotion .material-icons {
+    font-size: 30px;
 }
