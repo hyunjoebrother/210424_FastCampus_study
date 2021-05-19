@@ -56,11 +56,23 @@ swiper-container은 공지사항이랑 아이콘 중간임
 이제 여기 영역에 슬라이드 기능 가져와서 js로 연결하자
 
 
+17. 요소 슬라이드 - 수직 슬라이드 (Swiper)
+
+이제 공지사항 내용들을 슬라이드하도록 
+js 라이브러리를 다운하자
+swiperjs  -> Demo - Vertical 수직 슬라이드
+-> Get started- CDN 복붙 (min은 최적화해서 압축한 ver)
+-> head 태그에 넣자
+* pagination : 슬라이드 번호
+
+사이트 설명 보니까 swiper-wrapper 가 필수래요~
+작업 ㄱㄱ
+이제 js 작업해서 동작하자!
+new Swiper(); 
+-> 생성자 (클래스 개념)
 
 
-
-
-
+18. 
 
 
 

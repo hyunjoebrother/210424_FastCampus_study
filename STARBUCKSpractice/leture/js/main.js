@@ -57,3 +57,12 @@ fadeEls.forEach(function (fadeEl, index) {
         opacity: 1
     });
 });
+
+
+// 공지사항 swiper 작업 - new Swiper(선택자, 옵션)
+
+new Swiper('.notice-line .swiper-container', {
+    direction : 'vertical',
+    autoplay : true, // 슬라이드 자동 재생 여부
+    loop : true // 반복 재생 여부
+});
