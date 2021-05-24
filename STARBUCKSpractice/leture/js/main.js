@@ -72,7 +72,7 @@ new Swiper('.promotion .swiper-container', {
     // 한 번에 총 3개의 슬라이드가 보이도록
     slidesPerView : 3,
     spaceBetween : 10, // 슬라이드 사이 여백
-    centerdSlides : true, // 1번 슬라이드가 가운데에 보이도록
+    centeredSlides : true, // 1번 슬라이드가 가운데에 보이도록
     loop : true,
     autoplay : {
         // 옵션 추가 5초
