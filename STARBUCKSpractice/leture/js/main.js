@@ -67,3 +67,25 @@ new Swiper('.notice-line .swiper-container', {
     autoplay : true, // 슬라이드 자동 재생 여부
     loop : true // 반복 재생 여부
 });
+
+new Swiper('.promotion .swiper-container', {
+    // 한 번에 총 3개의 슬라이드가 보이도록
+    slidesPerView : 3,
+    spaceBetween : 10, // 슬라이드 사이 여백
+    centerdSlides : true, // 1번 슬라이드가 가운데에 보이도록
+    loop : true,
+    autoplay : {
+        // 옵션 추가 5초
+        delay : 5000
+    },
+
+    pagination : {
+        el: '.promotion .swiper-pagination', // 페이지 번호 요소 선택자
+        clickable : true // 사용자의 페이지 번호 요소 제어 가능 여부
+    },
+
+    navigation : {
+        prevEl : '.promotion .swiper-prev',
+        nextEl : '.promotion .swiper-next'
+    }
+});
