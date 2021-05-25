@@ -498,6 +498,14 @@ header .badges .badge {
     height: 693px;
     background-color: #f6f5ef;
     position: relative;
+    /* toggle 작업 */
+    transition: height .4s;
+    overflow: hidden;
+}
+
+/* toggle 작업 */
+.notice .promotion.hide {
+    height: 0;
 }
 
 .notice .promotion .swiper-container {

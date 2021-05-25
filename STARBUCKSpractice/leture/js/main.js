@@ -89,3 +89,21 @@ new Swiper('.promotion .swiper-container', {
         nextEl : '.promotion .swiper-next'
     }
 });
+
+
+// 프로모션 토글 작업
+const promotionEl = document.querySelector('.promotion');
+const promotionToggleBtn = document.querySelector('.toggle-promotion');
+
+let isHidePromotion = false; // 어느 순간에서 값이 false에서 다른 걸로 할당 될 수 있음
+
+promotionToggleBtn.addEventListener('click', function() {
+    isHidePromotion = !isHidePromotion // 어떤 특정 값의 반대에 해당하는 값을 반환
+    if (isHidePromotion) {
+        // 숨김 처리 로직
+        promotionEl.classList.add('hide');
+    } else {
+        // 보임 처리
+        promotionEl.classList.remove('hide');
+    }
+});
