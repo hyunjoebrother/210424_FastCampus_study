@@ -23,8 +23,30 @@ REWARDS 섹션 밑에 유튭영상 넣는 section 추가
 #player -> div 태그에 id가 player 넣는 단축키
 .youtube__area -> class 이름
 
+* youtube iframe API
 
-youtube iframe API
+유튭 영상을 코드로 삽입하기 (유튭 영상 제어)
+-> 사이트 링크에서 가이드 코드 보면서 파이팅파이팅
+
+-> youtube.js 라는 파일을 새로 만들자
+외부 라이브러리 링크랑 함수 이름은 바꾸면ㄴㄴ
+videoID : 최초 재생할 유튭 영상 ID
+
+그리고 index.html에 js파일 등록
+<script defer src = "./js/youtube.js"></script>
+
+
+25. 유튜브 영상 배경 - 반복 애니메이션
+
+
+
+
+
+
+
+
+
+
 
 
 
