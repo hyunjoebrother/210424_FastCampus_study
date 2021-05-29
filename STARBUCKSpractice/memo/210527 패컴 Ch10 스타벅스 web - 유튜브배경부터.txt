@@ -12,3 +12,24 @@ flex-wrap: wrap;
 
 flex-grow: 1; 
 컨테이너 내부에서 최대한의 너비로 쓰도록 늘어나는 비율
+
+
+23. 유튜브 영상 배경 - Youtube iframeAPI (1)
+
+padding-top : 50% -> 부모-자식 요소의 길이 비율 2ㄷ1로 지정됨
+-> 유튭 같은 영상 삽입하기 좋음 (유튭은 16ㄷ9 비율, 56.25%)
+
+REWARDS 섹션 밑에 유튭영상 넣는 section 추가
+#player -> div 태그에 id가 player 넣는 단축키
+.youtube__area -> class 이름
+
+
+youtube iframe API
+
+
+
+
+
+
+
+
