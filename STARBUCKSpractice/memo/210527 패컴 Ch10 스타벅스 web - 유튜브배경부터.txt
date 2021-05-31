@@ -55,6 +55,31 @@ main.js ㄱㄱ
 
 26. 고정 이미지 배경
 
+SEASON PRODUCT 섹션을 만들자
+그 밑에는 RESERVE COFFEE
+그 밑에는 PICK YOUR FAVORITE
+
+
+27. 3D 애니메이션
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
