@@ -62,10 +62,14 @@ SEASON PRODUCT 섹션을 만들자
 
 27. 3D 애니메이션
 
+RESERVE STORE 섹션 만들자
+-> 중앙에 동그라미 이미지에 마우스 올리면
+회전하는 애니메이션 작업하자
+-> css에서 transform : rotate -> hidden
+3차원 회전 효과+원근법 (perspective 효과)
 
 
-
-
+28. 스크롤 위치 계산 애니메이션
 
 
 
