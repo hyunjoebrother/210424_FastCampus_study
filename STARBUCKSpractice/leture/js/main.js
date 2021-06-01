@@ -141,3 +141,18 @@ spyEls.forEach(function (spyEl) {
     .setClassToggle(spyEl, "show")
     .addTo(new ScrollMagic.Controller());
 });
+
+// 하단 AWARDS swiper 작업
+new Swiper(".awards .swiper-container", {
+  direction: "horizontal", // 기본임
+  autoplay: true,
+  loop: true,
+  spaceBetween: 30, // 여백
+  slidesPerView: 5, // 하나의 화면에 보여지는 슬라이드 수
+
+  // 화살표 선언
+  navigation: {
+    prevEl: ".awards .swiper-prev",
+    nextEl: ".awards .swiper-next",
+  },
+});
