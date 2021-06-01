@@ -71,15 +71,45 @@ RESERVE STORE 섹션 만들자
 
 28. 스크롤 위치 계산 애니메이션
 
+스크롤하면서 화면에 안 보이는 애들이 샤샤샥 나타남
+-> 화면에 보이면 이미지 뜨는 애니메이션
+
+일단 섹션 FIND THE STORE부터 만들자
+
+* JS 외부 라이브러리 : scrollMagic cdn
+-> 화면 위아래로 스크롤할 때 각각 해당하는
+섹션들 애니메이션 처리 판단
+
+-> html에서 script 태그에 cdn 링크 추가하고
+main.js 작업하자
+
+  ScrollMagic.Scene({
+    triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
+    triggerHook: 0.8, // 감시하고 있는 요소가 0.8 지점에서 판단될 것인지
+  })
 
 
+-> html파일에서 SEASON SECTION부터
+클래스에 scroll-spy 샤샤샥 추가하자
+
+' 지속적으로 감시 spy'하다가
+구간 지나면 show 라는 클래스를 추가해줌 ㅇㅇㅇ
+-> 0.8지점 ㅇㅇ 
+
+css에서 COMMON 구간에
+공통의 back-to-position 클래스 만들어주자
+to-right/left : 이동방향
+show -> opacity : 0 -> 1로 보이도록
+
+-> html에서 각 섹션에 back-to-position 클래스 추가
+
+애니메이션 동시에 하니까 심심
+-> 시간차로 delay 추가 ㅇㅇ
+css 에 delay-n 요소 만들고
+html에 클래스 추가해주자
 
 
-
-
-
-
-
+30. 다중 요소 슬라이드
 
 
 
