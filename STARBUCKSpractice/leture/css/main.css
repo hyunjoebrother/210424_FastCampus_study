@@ -19,8 +19,8 @@ a {
   text-decoration: none; /* 링크라서 걸린 밑줄 제거 */
 }
 
+/* 가운데 정렬 */
 .inner {
-  /* 가운데 정렬 */
   width: 1100px;
   margin: 0 auto; /* 외부여백 위아래는 0 좌우는 auto */
   position: relative;
@@ -57,7 +57,7 @@ a {
 }
 
 .btn.btn--brown {
-  background-color: #592b18;
+  border-color: #592b18;
   color: #592b18;
 }
 
@@ -67,7 +67,7 @@ a {
 }
 
 .btn.btn--gold {
-  background-color: #d9aa8a;
+  border-color: #d9aa8a;
   color: #d9aa8a;
 }
 
@@ -77,7 +77,7 @@ a {
 }
 
 .btn.btn--white {
-  background-color: #fff;
+  border-color: #fff;
   color: #fff;
 }
 

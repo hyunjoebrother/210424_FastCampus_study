@@ -19,6 +19,8 @@ searchInputEl.addEventListener("blur", function () {
 
 // 스크롤 내리면 배너 사라짐
 const badgeEl = document.querySelector("header .badges");
+const toTopEl = document.querySelector("#to-top");
+
 // 브라우저 창 window, 우리가 보고 있는 화면 자체
 // window.addEventListener('scroll', function() {
 //     console.log('scroll!'); // scroll할 때마다 출력
@@ -35,11 +37,20 @@ window.addEventListener(
         opacity: 0,
         display: "none", // 진짜 요소 제거됨
       });
+
+      // FOOTER - 버튼 보이기!
+      gsap.to(toTopEl, 0.2, {
+        x: 0,
+      });
     } else {
       //badgeEl.style.display = 'block';
       gsap.to(badgeEl, 0.6, {
         opacity: 1,
         displat: "block",
+      });
+      // FOOTER - 버튼 숨기기!
+      gsap.to(toTopEl, 0.2, {
+        x: 100, // 오른쪽으로 100px 이동
       });
     }
   }, 300)
@@ -160,3 +171,11 @@ new Swiper(".awards .swiper-container", {
 // FOOTER - 현재 날짜
 const thisYear = document.querySelector(".this-year");
 thisYear.textContent = new Date().getFullYear(); // 숫자로 반환
+
+// 버튼 선택하면 최상단 이동
+// const toTopEl = document.querySelector("#to-top");
+toTopEl.addEventListener("click", function () {
+  gsap.to(window, 0.7, {
+    scrollTo: 0, // 스크롤 위치를 0px 위치로 0.7s동안 옮겨주겠다
+  });
+});

@@ -145,3 +145,15 @@ swiper JS 사용해보자
 
 gsap cdn에서 ScrollToPlugin 코드 복사
 
+main.js에서 window쪽에 코드를 추가하자
+-> window 객체는 우리 프로젝트 화면을 의미
+-> 사용자가 실행할 때 ~~
+
+const toTopEl = document.querySelector("#to-top");
+-> #to-top을 toTopEl로 바꿔줌
+
+
+
+
+210603 강의 끝~~~
+
