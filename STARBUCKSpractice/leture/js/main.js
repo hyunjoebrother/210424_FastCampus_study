@@ -156,3 +156,7 @@ new Swiper(".awards .swiper-container", {
     nextEl: ".awards .swiper-next",
   },
 });
+
+// FOOTER - 현재 날짜
+const thisYear = document.querySelector(".this-year");
+thisYear.textContent = new Date().getFullYear(); // 숫자로 반환
