@@ -1,0 +1,23 @@
+210705 패스트 캠퍼스 - Ch 2. JS 시작하기
+
+
+01. 개요(ECMAScript) 및 프로젝트 초기화
+
+ECMA Script (애크마, ES)
+: JS가 표준화된 문법 - ES6, ES2015... JS의 버전임
+
+작업 폴더 세팅하자
+$npm init -y : package.json 생성
+$npm install parcel-bundler -D : 모듈 폴더, lock 파일 생성
+
+-> json 파일에서 "scripts" 지정
+-> index.html, main.js 파일 생성
+
+$npm run dev : 로컬 환경에 개발 서버 ON
+
+
+02. 데이터 타입 확인
+
+명령 : console.log("hello world");
+
+호에에에
