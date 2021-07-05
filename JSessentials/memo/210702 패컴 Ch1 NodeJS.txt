@@ -20,3 +20,125 @@ JS = 프로그래밍 언어 -> 그 문법이 컴퓨터&브라우저 모두 제�
 
 02. NVM 사용법
 
+$nvm install 12.14.1
+$nvm ls
+$nvm use -> 버전 변경
+(여러 사람들 협업할 때 Node 버전 영향 있을 수도 있어서)
+$nvm uninstall
+
+
+03. NPM 개요
+
+Node Package Manager
+: 개발자들이 만든 다양한 기능(패키지, 모듈)들을 관리
+
+기존에는 link, script태그로 연결시킴
+-> 요즘은 패키지들을 직접 설치
+-> 관리 효율 증가, 손쉬운 기능 고도화!
+
+$npm install @@@
+
+$npm init -y
+-> package.json 파일 생성 -> 패키지 관리하자
+
+* 옵션 목록
+main : 지워도 ㄱㅊ
+scripts : 현재 프로젝트 내부에서 사용할 수 있는 여러 scripts 명령들 명시
+-> 손쉽게 명령어 사용 ㄱㄴ
+키워드, 소유주, 라이센스 등 명시 
+
+
+$npm install parcel-bundler -D
+-> node_modules폴더 & package-lock.json 파일 생성
+
+$npm install lodash 
+$npm i -> 폴더 없어도 이 명령어 통해서 가능
+
+
+폴더 : 어떤 패키지 설치하면 node_modules 폴더에 들어간다
+-> 어떤 패키지 어떤 버전을 설치했는지 알 수 있음
+
+파일 : 내부에서 사용되는 패키지들 정보 자동 관리
+
+$npm install -D parcel-bundler
+$npm install lodash
+
+* -D : 개발용 의존성 패키지 설치
+-> 개발할 때만 필요하고 나중에 브라우저 동작할 때는 ㄴㄴ
+
+
+05. 개발 서버 실행과 빌드
+
+index.html, main.js 새로운 파일 만들고 작업
+script태그 -> src = "./main.js"
+
+$parcel index.html 로 화면을 띄워보자
+-> Command 없음 
+-> package.json 파일에서 
+  "scripts": {
+    "dev" : "parcel index.html"
+  }, 
+-> 현재 프로젝트에서만 동작하겠다 인식 
+(dev라는 이름으로 로컬 환경에서 개발 서버 열어줌)
+(parcel-bundler 패키지의 도움을 받음)
+$npm run dev
+
+
+main.js에 lodash 패키지를 가지고 오고 싶으면
+main 옵션인 lodash.js를 찾아서 열어보자
+_ : lodash 모듈 안의 여러가지 기능들 중에서
+-> .camelCase : 이 방식으로 변경
+
+
+json 파일에서 또 추가해보자
+"build": "parcel build index.html"
+-> 실제로 사용자들이 보는 용도의 결과물 출력
+-> dist 폴더 & 파일 생성
+
+'코드 난독화 작업' 
+: 작성된 코드를 읽기 어렵게 만든다
+빌드된 결과(제품)는 브라우저에서 해석되는 용도로,
+용량을 축소하고 읽기 어렵게 만드는 등 최적화를 하는게 좋다
+
+*번들 (Bundle)
+: 우리가 프로젝트 개발에 사용한 여러 모듈(패키지)을
+하나로 묶어내는 작업
+
+
+06. 유의적 버전 (SemVer)
+
+버전 : N.N.N 표기 - Sematic Versioning
+Major.Minor.Patch 버전 표기 순서
+
+- Major : 기존 버전과 호환되지 않는 새로운 버전
+- Minor : 기존 버전과 호환되는 새로운 기능이 추가된 버전
+- Patch : 기존 버전과 호환되는 버그 및 오타 등이 수정된 버전
+^ : Major 버전 안에서 가장 최신 버전으로 업데이트 가능
+
+$npm info lodash : 정보 확인, 최신 버전 확인 가능
+정확하게 설치 버전 알기 위해 node_modules 폴더에서
+lodash 폴더에 package.json 파일에서 직접 확인
+
+$npm install lodash@4.17.20 : 특정 버전 설치
+$npm update lodash
+
+
+07. NPM 프로젝트의 버전 관리 (.gitignore)
+
+버전 관리가 할 필요가 없는 파일&폴더 (용량도 많음)
+-> PUSH ㄴㄴㄴ
+-> 나중에 우리가 npm으로 설치 가능
+
+
+
+
+
+
+
+
+
+
+
+
+
+
