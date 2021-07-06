@@ -20,4 +20,28 @@ $npm run dev : 로컬 환경에 개발 서버 ON
 
 명령 : console.log("hello world");
 
-호에에에
+console.log(typeof "hello world");
+-> typeof : 특정 data의 type 출력
+-> string, number, boolean, undefined, object
+
+*undefined vs null
+: 의도 없음 / 있음
+-> null 의 type는 object
+
+-> 객체와 배열 data를 더 자세히 type을 구분해보자
+함수 getType를 만들자
+
+function getType(data) {
+  return Object.prototype.toString.call(data);
+}
+-> slice 메소드로 특정 문자만 나오도록 출력
+return Object.prototype.toString.call(data).slice(8, -1);
+
+
+export default function getType(data)
+-> 다른 파일로 export 할 수 있음
+-> 경로 지정 반드시 필요!!
+
+03. 산술, 할당 연산자
+
+
