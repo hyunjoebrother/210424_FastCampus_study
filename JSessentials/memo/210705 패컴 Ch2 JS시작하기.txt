@@ -94,7 +94,87 @@ true면 참, false면 거짓 출력
 
 06. 조건문 If else
 
+먼저 random() 함수 설정
 
+if -> 첫 번째 조건
+else if -> if 틀리면 추가 조건 (중간 조건)
+else if -> 또 틀리면 추가 조건
+else -> 다 틀리면
+
+
+07. 조건문 switch
+
+: 변수 값에 따라서. 상황에 따라서
+-> 정확히 무엇인지 특정 조건문 작성 가능
+break로 멈추고
+다 만족 안하면 default
+
+switch (ran) {
+  case 0:
+    console.log("is 0");
+    break;
+  case 2:
+    console.log("is 2");
+    break;
+  case 4:
+    console.log("is 4");
+    break;
+
+  default:
+    console.log("rest...");
+}
+
+
+08. 반복문 For
+
+for (시작조건; 종료조건; 변화조건) { }
+
+for (let i = 0; i < 3; i += 1) {
+  console.log(i);
+}
+
+* HTML 파일에 출력해보자
+
+const ulEl = document.querySelector("ul");
+for (let i = 0; i < 3; i += 1) {
+  console.log(i);
+  const li = document.createElement("li");
+  li.textContent = `list-${i + 1}`;
+  ulEl.appendChild(li);
+}
+
+
+09. 변수 유효범위 (Variable Scope)
+
+: var, let, const
+
+변수가 선언되어져 있는 Block이 유효 범위 ㅇㅇ
+괄호 내에서 const 선언하고 console.log 같이 있어야
+유효한 범위 내에 있는 거임 ㅇㅇ
+
+'블록 레벨'의 유효범위 check
+var은 별로임. 메모리 누수 ㄱㄴ
+let, const로 블록 레벨 유효하도록 쓰자
+
+
+
+10. 형 변환 (Type Conversion)
+
+const A = 1;
+const B = "1";
+
+console.log(A === B);
+console.log(A == B);
+-> == : 동등 연산자인데
+의도하지 않게 같다고 나올 수도 있다...
+
+'형 변환'이 되어 같은 type로 변하게 된다
+
+- Truthy (참 같은 값)
+: true, {}, [], 1, 2, 'false', -12, '3.14'...
+
+- Falsy (거짓 같은 값)
+: false, '', null, undefined, 0, -0, NaN (Not a Number, 숫자 data)
 
 
 

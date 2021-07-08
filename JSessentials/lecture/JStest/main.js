@@ -1,4 +1,5 @@
 import getType from "./getType";
+import random from "./getRandom";
 
 // 데이터 타입
 
@@ -75,3 +76,80 @@ if (i) {
 }
 
 console.log(a ? "참" : "거짓");
+
+// If else 조건문
+
+const ran = random();
+
+if (ran == 0) {
+  console.log("is 0");
+} else if (a === 2) {
+  console.log("2이다");
+} else if (a === 4) {
+  console.log("4이다");
+} else {
+  console.log("rest...");
+}
+
+// Switch 조건문
+
+switch (ran) {
+  case 0:
+    console.log("is 0");
+    break;
+  case 2:
+    console.log("is 2");
+    break;
+  case 4:
+    console.log("is 4");
+    break;
+
+  default:
+    console.log("rest...");
+}
+
+// For 반복문
+const ulEl = document.querySelector("ul");
+for (let i = 0; i < 3; i += 1) {
+  console.log(i);
+  const li = document.createElement("li");
+  li.textContent = `list-${i + 1}`;
+
+  if ((i + 1) % 2 == 0) {
+    li.addEventListener("click", function () {
+      console.log(li.textContent);
+    });
+  }
+
+  ulEl.appendChild(li);
+}
+
+// 변수 유효범위 (Variable Scope)
+
+function scope() {
+  if (true) {
+    const aaa = 123;
+    console.log(aaa);
+  }
+}
+scope(aaa);
+
+// 형 변환 (Type Conversion)
+
+const A = 1;
+const B = "1";
+
+console.log(A === B);
+console.log(A == B);
+
+if (true) {
+  console.log(123);
+}
+
+if ("false") {
+  console.log(123);
+}
+
+if (undefined) {
+  console.log(123);
+}
