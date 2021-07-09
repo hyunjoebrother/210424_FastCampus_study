@@ -15,3 +15,66 @@ const $$$ = function() {} : 기명 함수
 
 
 02. 화살표 함수
+
+( ) => { } vs function( ) { }
+
+=> 화살표 함수로 내용을 할당
+function 키워드 대신함 ㅇㅇ
+축약형으로 함수를 최소화
+const doubleArrow = (x) => x * 2;
+
+객체형 데이터는 () 안에 {}로 담는다
+const doubleArrow = (x) => ({
+  name: "Mei",
+});
+
+
+03. IIFE 
+즉시실행함수 Immediately-Invoked Function Expression
+
+익명 함수를 통하여 바로 함수를 실행하는 로직
+함수 이름을 지정하지 않고 ㅇㅇ
+
+(function () {
+  console.log(ii * 2);
+})();
+
+
+04. 호이스팅 (Hoisting)
+: 함수 선언부가 유효범위 최상단으로 끌어올려지는 현상
+
+원래 함수 선언하고 호출해야함
+근데 JS에는 유효범위 최상단 할 수 있어서
+먼저 호출하고 나중에 선언해도 ㄱㅊ
+
+
+05. 타이머 함수
+
+setTimeout(함수, 시간) : 일정 시간 후 함수 실행
+setInterval(함수, 시간) : 시간 간격마다 함수 실행
+clearTimeout() : 설정된 Timeout 함수를 종료
+clearInterval() : 설정된 Interval 함수를 종료
+
+시간 단위는 ms -> 0.001s
+
+
+06. 콜백 (Callback)
+: 함수의 인수로 사용되는 함수
+
+* setTimeout(함수, 시간)
+-> 인수로 사용된 함수 : Callback
+-> 시간 오래걸리는 거 있으면 먼저 호출
+
+
+
+
+
+
+
+
+
+
+
+
+
+
