@@ -1,0 +1,61 @@
+210709 패스트 캠퍼스 - Ch 4. JS클래스
+
+
+01. 생성자 함수 (prototype)
+
+먼저 하나의 객체 data { } 할당
+안에 있는 firstName, lastName : 속성 property
+property에 함수 data가 할당되어있으면 '메소드'
+-> getFullName은 메소드 ㅇㅇ
+
+--> 속성, 메소드 : 멤버 Member
+` ` 백틱 내부에 data를 ${ } 안에 보관함 ㅇㅇ 
+-> 보관된 내용을 this로 객체를 지칭함
+
+이런식으로 하나하나 만들기 귀찮음 + 메모리 관리
+-> 기본적인 구조와 속성과 메소드 로직이 동일함
+-> "클래스" check
+
+function user(first, last) {
+  this.firstName = first;
+  this.lastName = last;
+}
+
+const meii = new user("Mei", "Kim");
+console.log(meii);
+
+* new라는 키워드로 함수를 실행
+-> 실행하는 함수 : '생성자 함수'
+-> 하나의 객체 data가 생성된다
+-> const로 반환된 변수 : 인스턴스
+
+
+* prototype 
+
+* 생성자 함수 이름 -> 대문자로 구분
+
+
+02. this
+
+일반 Normal 함수는 호출 위치에 따라 this 정의
+화살표 Arrow 함수는 자신이 선언된 함수 범위에서 this 정의
+
+normal 부분은 함수가 호출 위치가 나옴
+Arrow 부분은 선언된 함수 범위를 몰라서 undefined
+
+이제 생성자 함수를 사용해보자
+
+
+03. ES6 Classes
+
+
+
+
+
+
+
+
+
+
+
+
